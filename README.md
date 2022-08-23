@@ -1,2 +1,2 @@
-# cohort12-traveling-devs
+# Traveling Devs
 Team project: Air BnB, attractions site using api.

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Test</title>
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>Heading</h1>
+		<nav>
+			<a href="#" onclick="showFavorites();return false;">Show Favorites</a>
+			<a href="#" onclick="showAll();return false;">Show All</a>
+		</nav>
+
+	</header>
+	<div class="filters" id="filters">
+		<div class="filter">
+			<input value="wifi" type="checkbox" id="wifi" name="filter" />
+			<label for="wifi">Free WiFi</label>
+		</div>
+		<div class="filter">
+			<input value="pets" type="checkbox" id="pets" name="filter" />
+			<label for="pets">Pets allowed</label>
+		</div>
+		<div class="filter">
+			<input value="hottub" type="checkbox" id="hottub" name="filter" />
+			<label for="hottub">Hot tub</label>
+		</div>
+	</div>
+	<main>
+		<div id="home">
+			<div id="cards" class="cards"></div>
+		</div>
+		<div id="details"></div>
+	</main>
+	<footer>
+		<p>This is our footer</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>

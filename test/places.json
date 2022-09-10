@@ -1,0 +1,50 @@
+[
+	{
+		"id": "1",
+		"name": "The Ashmont Apartment",
+		"description":	"Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+		"address": "1 Ashmont Street",
+		"phone": "617-522-1234",
+		"price": "$130",
+		"image": "1.jpg",
+		"rate": "4/5 Excellent",
+		"type": "Apartment",
+		"favorite": false,
+		"classes": [
+			"wifi",
+			"pets"
+		]
+	},
+	{
+		"id": "2",
+		"name": "Sunset Bungelow",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+		"address": "1 Ashmont Street",
+		"phone": "617-522-1234",
+		"price": "$100",
+		"image": "2.jpg",
+		"rate": "4/5 Excellent",
+		"type": "Condo",
+				"favorite": false,
+		"classes": [
+			"wifi"
+		]
+	},
+	{
+		"id": "3",
+		"name": "Nighshade Inn",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+		"address": "1 Ashmont Street",
+		"phone": "617-522-1234",
+		"price": "$150",
+		"image": "3.jpg",
+		"rate": "4/5 Excellent",
+		"type": "Hotel",
+				"favorite": false,
+		"classes": [
+			"wifi",
+			"pets",
+			"hottub"
+		]
+	}
+]

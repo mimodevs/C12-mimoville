@@ -1,2 +1,2 @@
-# Traveling Devs
-Team project: Air BnB, attractions site using api.
+# Mimoville
+Team project: building a web app with a place we call "Mimoville".

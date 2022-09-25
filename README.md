@@ -12,7 +12,7 @@
 
 [Complete Details](https://gist.github.com/thakichowdhury/b4ac923f2c451bed9716bf01d2b78c48)
 
-![g.png)
+![g](https://github.com/mimodevs/cohort12-team-mimoville/blob/main/g.png)
 
 ### Branching Strategy
 

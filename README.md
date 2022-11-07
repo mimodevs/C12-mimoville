@@ -32,9 +32,3 @@ npm start
 
 ## Development setup
 
-
-  
-
-## Meta
-
-Hello Its Rolo

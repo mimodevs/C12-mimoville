@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Record = (props) => (
  <tr>
    <td>{props.record.name}</td>
-   <td>{props.record.position}</td>
+   <td>{props.record.about}</td>
    <td>{props.record.level}</td>
    <td>
      <Link className="btn btn-link" to={`/edit/${props.record._id}`}>Edit</Link> |
@@ -56,11 +56,11 @@ export default function RecordList() {
      );
    });
  }
- // This following section will display the table with the records of individuals.
+
  return (
-   <div>
-     <h3>Record List</h3>
-     <Link className="nav-link" to="/create">
+   <div className="container">
+     <h1>Record List</h1>
+     <Link className="btn btn-primary" to="/create">
         Create Record
       </Link>
      <table className="table table-striped" style={{ marginTop: 20 }}>

@@ -15,7 +15,6 @@ export default function Edit() {
    async function fetchData() {
      const id = params.id.toString();
      const response = await fetch(`http://localhost:5005/record/${params.id.toString()}`);
- 
      if (!response.ok) {
        const message = `An error has occurred: ${response.statusText}`;
        window.alert(message);
@@ -28,15 +27,12 @@ export default function Edit() {
        navigate("/");
        return;
      }
- 
      setForm(record);
    }
  
    fetchData();
- 
    return;
  }, [params.id, navigate]);
- 
  // These methods will update the state properties.
  function updateForm(value) {
    return setForm((prev) => {
@@ -51,7 +47,6 @@ export default function Edit() {
      position: form.position,
      level: form.level,
    };
- 
    // This will send a post request to update the data in the database.
    await fetch(`http://localhost:5005/update/${params.id}`, {
      method: "POST",
@@ -63,7 +58,6 @@ export default function Edit() {
  
    navigate("/");
  }
- 
  // This following section will display the form that takes input from the user to update the data.
  return (
    <div>

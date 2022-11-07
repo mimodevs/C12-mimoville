@@ -32,7 +32,3 @@ npm start
 
 ## Development setup
 
-
-  
-
-## Meta

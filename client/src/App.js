@@ -6,6 +6,7 @@ import RecordList from "./components/recordList";
 import Edit from "./components/edit";
 import Create from "./components/create";
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
  
 const App = () => {
  return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route exact path="/records" element={<RecordList />} />
         <Route path="/edit/:id" element={<Edit />} />
         <Route path="/create" element={<Create />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </>
  );

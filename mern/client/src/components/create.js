@@ -15,7 +15,6 @@ export default function Create() {
  // This function will handle the submission.
  async function onSubmit(e) {
    e.preventDefault();
-   // When a post request is sent to the create url, we'll add a new record to the database.
    const newPerson = { ...form };
    await fetch("http://localhost:5005/record/add", {
      method: "POST",
@@ -38,30 +37,15 @@ export default function Create() {
      <form onSubmit={onSubmit}>
        <div className="form-group">
          <label htmlFor="name">Name</label>
-         <input
-           type="text"
-           className="form-control"
-           id="name"
-           value={form.name}
-           onChange={(e) => updateForm({ name: e.target.value })}
-         />
+         <input type="text" className="form-control" id="name" value={form.name} onChange={(e) => updateForm({ name: e.target.value })} />
        </div>
        <div className="form-group">
          <label htmlFor="about">About</label>
-         <input
-           type="text"
-           className="form-control"
-           id="about"
-           value={form.about}
-           onChange={(e) => updateForm({ about: e.target.value })}
+         <input type="text" className="form-control" id="about" value={form.about} onChange={(e) => updateForm({ about: e.target.value })}
          />
        </div>
        <div className="form-group">
-         <input
-           type="submit"
-           value="Create person"
-           className="btn btn-primary"
-         />
+         <input type="submit" value="Create person" className="btn btn-primary" />
        </div>
      </form>
    </div>

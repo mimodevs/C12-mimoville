@@ -7,6 +7,7 @@ import Edit from "./components/edit";
 import Create from "./components/create";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import Footer from "./components/Footer";
  
 const App = () => {
  return (

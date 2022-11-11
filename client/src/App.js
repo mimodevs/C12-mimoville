@@ -11,7 +11,7 @@ import AboutPage from "./pages/AboutPage";
 const App = () => {
  return (
   // This is a React fragment. It is a way to return multiple elements without wrapping them in a div.
-    <> 
+      <>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
@@ -20,7 +20,8 @@ const App = () => {
         <Route path="/create" element={<Create />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
-    </>
+      <Footer />
+      </>
  );
 };
  

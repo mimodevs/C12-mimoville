@@ -358,4 +358,4 @@ MigrationBackup/
 .Trashes
 ehthumbs.db
 Thumbs.db
-
+client/package-lock.json

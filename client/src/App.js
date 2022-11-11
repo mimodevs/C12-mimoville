@@ -7,6 +7,7 @@ import Edit from "./components/edit";
 import Create from "./components/create";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import SearchPage from "./pages/SearchPage";
 import Footer from "./components/Footer";
  
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/edit/:id" element={<Edit />} />
         <Route path="/create" element={<Create />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/search" element={<SearchPage />} />
       </Routes>
       <Footer />
       </>

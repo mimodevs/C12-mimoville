@@ -6,52 +6,41 @@ const Footer = () => {
   return (
     <footer>
     <div>
-
-      <section>
+      <section class="Social-container">
         <a
-          href="#!"
-          role="button"
-          ><i class="fab fa-facebook-f">facebook</i
-        ></a>
+          href="#"
+          class="social-btn">
+          <img src="/assets/FB logo.png"></img> 
+          </a>
   
         <a
-          href="#!"
-          role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
+          href="#"
+          class="social-btn">
+          <img src="/assets/Insta logo.png"></img> 
+          </a>
   
         <a
-          href="#!"
-          role="button"
-          ><i class="fab fa-google"></i
-        ></a>
-  
-        <a
-          href="#!"
-          role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-  
-        <a
-          href="#!"
-          role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-
-        <a
-
-          href="#!"
-          role="button"
-          ><i class="fab fa-github"></i
-        ></a>
+          href="#"
+          class ="social-btn">
+             <img src="/assets/GH logo.png"></img> 
+          </a>
       </section>
-
     </div>
-
-    <div class="text-center p-3" >
-      © 2020 Copyright:
-      <a class="text-white" >MDBootstrap.com</a>
+    <div>
+    <h4>Contact Us!</h4>
+    <p>987-461-9884</p>
+    <p>or</p>
+    <p>Kexample@mimoville.com</p>
+    <h4>Questions?</h4>
+    <form>
+    <label for="Email">Email:</label>
+    <input type="text" placeholder="example@123.com"></input>
+    <label for="Questions">Questions:</label>
+    <input type="text" placeholder="Type here"></input>
+    </form>
+ 
     </div>
+     
   </footer>
   );
 };

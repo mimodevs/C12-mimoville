@@ -8,19 +8,19 @@ const Footer = () => {
     <div>
       <section class="Social-container">
         <a
-          href=""
+          href="#"
           class="social-btn">
           <img src="/assets/FB logo.png"></img> 
           </a>
   
         <a
-          href=""
+          href="#"
           class="social-btn">
           <img src="/assets/Insta logo.png"></img> 
           </a>
   
         <a
-          href=""
+          href="#"
           class ="social-btn">
              <img src="/assets/GH logo.png"></img> 
           </a>

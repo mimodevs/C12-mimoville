@@ -1,0 +1,32 @@
+[
+    {
+       "name": "Kelly Rock",
+       "title": "Senior Developer",
+       "Bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum leo vel orci porta non. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate."
+    },
+    {
+       "name": "Michael",
+       "title": "Team Lead",
+       "Bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum leo vel orci porta non. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate."
+    },
+    {
+       "name": "Mayte",
+       "title": " Web Developer",
+       "Bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum leo vel orci porta non. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate."
+    },
+    {
+       "name": "Brandy",
+       "title": "Web developer/ Graphic Designer",
+       "Bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum leo vel orci porta non. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate."
+    },
+    {
+       "name": "Gage",
+       "title": "Web Developer",
+       "Bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum leo vel orci porta non. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate."
+    },
+    {
+       "name": "Rolando",
+       "title": "Web Developer",
+       "Bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum leo vel orci porta non. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate."
+    }
+ ]

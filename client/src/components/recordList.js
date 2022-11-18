@@ -5,6 +5,8 @@ const Record = (props) => (
  <tr>
    <td>{props.record.name}</td>
    <td>{props.record.about}</td>
+   <td>{props.record.address}</td>
+   <td>{props.record.price} Night</td>
    <td>
      <Link className="btn btn-link" to={`/edit/${props.record._id}`}>Edit</Link> |
      <button className="btn btn-link" onClick={() => {
@@ -66,6 +68,8 @@ export default function RecordList() {
          <tr>
            <th>Name</th>
            <th>About</th>
+           <th>Address</th>
+           <th>Price</th>
            <th>Action</th>
          </tr>
        </thead>

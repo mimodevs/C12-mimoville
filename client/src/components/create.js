@@ -4,6 +4,8 @@ export default function Create() {
  const [form, setForm] = useState({
    name: "",
    about: "",
+   address: "",
+   price: "",
  });
  const navigate = useNavigate();
  // These methods will update the state properties.
@@ -27,7 +29,7 @@ export default function Create() {
      window.alert(error);
      return;
    });
-   setForm({ name: "", about: "" });
+   setForm({ name: "", about: "", address: "", price: "" });
    navigate("/records");
  }
  // This following section will display the form that takes the input from the user.
@@ -41,8 +43,15 @@ export default function Create() {
        </div>
        <div className="form-group">
          <label htmlFor="about">About</label>
-         <input type="text" className="form-control" id="about" value={form.about} onChange={(e) => updateForm({ about: e.target.value })}
-         />
+         <input type="text" className="form-control" id="about" value={form.about} onChange={(e) => updateForm({ about: e.target.value })} />
+       </div>
+       <div className="form-group">
+         <label htmlFor="name">Address</label>
+         <input type="text" className="form-control" id="address" value={form.address} onChange={(e) => updateForm({ address: e.target.value })} />
+       </div>
+       <div className="form-group">
+         <label htmlFor="name">Price</label>
+         <input type="text" className="form-control" id="price" value={form.price} onChange={(e) => updateForm({ price: e.target.value })} />
        </div>
        <div className="form-group">
          <input type="submit" value="Create person" className="btn btn-primary" />

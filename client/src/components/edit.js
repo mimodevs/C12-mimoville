@@ -5,6 +5,8 @@ export default function Edit() {
  const [form, setForm] = useState({
    name: "",
    about: "",
+   address: "",
+   price: "",
    records: [],
  });
  const params = useParams();
@@ -66,8 +68,7 @@ export default function Edit() {
            className="form-control"
            id="name"
            value={form.name}
-           onChange={(e) => updateForm({ name: e.target.value })}
-         />
+           onChange={(e) => updateForm({ name: e.target.value })} />
        </div>
        <div className="form-group">
          <label htmlFor="about">About: </label>
@@ -76,8 +77,25 @@ export default function Edit() {
            className="form-control"
            id="about"
            value={form.about}
-           onChange={(e) => updateForm({ about: e.target.value })}
-         />
+           onChange={(e) => updateForm({ about: e.target.value })} />
+       </div>
+       <div className="form-group">
+         <label htmlFor="name">Address: </label>
+         <input
+           type="text"
+           className="form-control"
+           id="address"
+           value={form.address}
+           onChange={(e) => updateForm({ address: e.target.value })} />
+       </div>
+       <div className="form-group">
+         <label htmlFor="name">Price: </label>
+         <input
+           type="text"
+           className="form-control"
+           id="price"
+           value={form.price}
+           onChange={(e) => updateForm({ price: e.target.value })} />
        </div>
        <br />
  

@@ -30,6 +30,8 @@ recordRoutes.route("/record/add").post(function (req, response) {
  let myobj = {
    name: req.body.name,
    about: req.body.about,
+   address: req.body.address,
+   price: req.body.price,
  };
  db_connect.collection("records").insertOne(myobj, function (err, res) {
    if (err) throw err;
@@ -44,6 +46,8 @@ recordRoutes.route("/update/:id").post(function (req, response) {
    $set: {
      name: req.body.name,
      about: req.body.about,
+     address: req.body.address,
+     price: req.body.price,
    },
  };
  db_connect

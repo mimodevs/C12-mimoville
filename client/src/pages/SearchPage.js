@@ -1,9 +1,10 @@
 import React from "react";
+import './SearchPage.css'; 
 
 const SearchPage = () => {
    return (
       <body>
-
+         
          <nav id="nav">
             <div>
                <h1>Mimoville</h1>

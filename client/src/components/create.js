@@ -5,6 +5,7 @@ export default function Create() {
    name: "",
    about: "",
    address: "",
+   phone: "",
    price: "",
  });
  const navigate = useNavigate();
@@ -29,7 +30,7 @@ export default function Create() {
      window.alert(error);
      return;
    });
-   setForm({ name: "", about: "", address: "", price: "" });
+   setForm({ name: "", about: "", address: "", phone: "", price: "" });
    navigate("/records");
  }
  // This following section will display the form that takes the input from the user.
@@ -48,6 +49,10 @@ export default function Create() {
        <div className="form-group">
          <label htmlFor="name">Address</label>
          <input type="text" className="form-control" id="address" value={form.address} onChange={(e) => updateForm({ address: e.target.value })} />
+       </div>
+       <div className="form-group">
+         <label htmlFor="name">Phone</label>
+         <input type="text" className="form-control" id="phone" value={form.phone} onChange={(e) => updateForm({ phone: e.target.value })} />
        </div>
        <div className="form-group">
          <label htmlFor="name">Price</label>

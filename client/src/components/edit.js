@@ -6,6 +6,7 @@ export default function Edit() {
    name: "",
    about: "",
    address: "",
+   phone: "",
    price: "",
    records: [],
  });
@@ -87,6 +88,15 @@ export default function Edit() {
            id="address"
            value={form.address}
            onChange={(e) => updateForm({ address: e.target.value })} />
+       </div>
+       <div className="form-group">
+         <label htmlFor="name">Phone: </label>
+         <input
+           type="text"
+           className="form-control"
+           id="phone"
+           value={form.phone}
+           onChange={(e) => updateForm({ phone: e.target.value })} />
        </div>
        <div className="form-group">
          <label htmlFor="name">Price: </label>

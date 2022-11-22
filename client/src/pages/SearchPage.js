@@ -1,5 +1,5 @@
 import React from "react";
-import './SearchPage.css'; 
+import '../styles/SearchPage.css'; 
 
 const SearchPage = () => {
    return (
@@ -8,7 +8,7 @@ const SearchPage = () => {
          <nav id="nav">
             <div>
                <h1>Mimoville</h1>
-               <img src="client/assets/Mimoville-logo.png" alt="Mimoville Logo"></img>
+               <img src="/assets/Mimoville-logo.png" alt="Mimoville Logo"></img>
                <form role="search" id="form">
                   <input type="search" placeholder="Find Your Getaway" id="search"></input>
                   <button type="submit">Search</button>

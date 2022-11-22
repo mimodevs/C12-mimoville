@@ -14,7 +14,7 @@ const HomePage = () => {
           <input className="check-out p-1 rounded bg-light" type="text" placeholder="Add Date"></input>
         </div>
         <div className="img-container">
-          <img src=""/>
+          <img src="/listings/example.png"/>
         </div>
       </div>
       <div className="about-container">

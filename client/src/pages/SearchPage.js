@@ -3,8 +3,7 @@ import '../styles/SearchPage.css';
 
 const SearchPage = () => {
    return (
-      <body>
-         
+      <div>
          <nav id="nav">
             <div>
                <h1>Mimoville</h1>
@@ -17,10 +16,9 @@ const SearchPage = () => {
          </nav>
 
          <main id="main">
-            <div class="listing"></div>
+            <div className="listing"></div>
          </main>
-
-      </body>
+      </div>
    );
 };
 

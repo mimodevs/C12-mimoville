@@ -3,8 +3,8 @@ import React from "react";
 const AboutPage = () => {
   return (
     <main>
-      <div class="Team_card">
-        <img class="profpic" src="..." alt="Team pictures"></img>
+      <div className="Team_card">
+        <img className="profpic" src="..." alt="Team pictures"></img>
         <div>
           <h5>${"name"}</h5>
           <p></p>

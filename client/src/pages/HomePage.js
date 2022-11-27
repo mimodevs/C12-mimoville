@@ -35,7 +35,7 @@ const HomePage = () => {
         </h2>
         <div className="card-container text-center">
           <div className="card1 mr-10">
-          <img src=""/>
+     
             <a className="link1" href="#">Brick House</a>
             <p>Mimo campgrounds</p>
             <p>
@@ -43,7 +43,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="card2 mr-10">
-            <img src=""/>
+
             <a className="link2" href="#">Small Cottage</a>
             <p>Lake side shacks</p>
             <p>
@@ -51,7 +51,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="card3 m-10">
-          <img src=""/>
+    
             <a className="link3" href="#">Wooden Tree Villa</a>
             <p>Campgrounds Vip Housing</p>
             <p>

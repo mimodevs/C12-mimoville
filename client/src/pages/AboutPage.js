@@ -2,15 +2,31 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <main>
-      <div className="Team_card">
-        <img className="profpic" src="..." alt="Team pictures"></img>
-        <div>
-          <h5>${"name"}</h5>
-          <p></p>
-          <a href="#"></a>
+    <main className="container-fluid">
+    <div className=" d-flex flex-row mb-3">
+      <div className="card">
+        <img src="/listings/example.png" className="card-img-top" alt="..." />
+  
+        <div className="card-body">
+          <h5 className="card-title">Name</h5>
+          <p className="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
       </div>
+      <div className="card">
+      <img src="/listings/example.png" className="card-img-top" alt="..." />
+
+        <div className="card-body">
+          <h5 className="card-title">Name</h5>
+          <p className="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div>
     </main>
   );
 };

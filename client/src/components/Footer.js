@@ -3,8 +3,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
-      <div>
+    <footer className="footer">
+      <div className="container-fluid">
         <section className="Social-container">
           <a href="#" className="social-btn">
             <img src="/assets/fblogo.png"></img>

@@ -18,7 +18,7 @@ export default function RecordList() {
  const [records, setRecords] = useState([]);
  useEffect(() => {
    async function getRecords() {
-     const response = await fetch(`http://localhost:5005/record/`);
+     const response = await fetch(`https://mimoville.herokuapp.com/record/`);
      const records = await response.json();
      setRecords(records);
    }
@@ -26,7 +26,7 @@ export default function RecordList() {
    return;
  }, [records.length]);
  async function deleteRecord(id) {
-   await fetch(`http://localhost:5005/${id}`, {
+   await fetch(`https://mimoville.herokuapp.com/${id}`, {
      method: "DELETE"
    });
    const newRecords = records.filter((el) => el._id !== id);

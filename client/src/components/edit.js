@@ -16,7 +16,7 @@ export default function Edit() {
  useEffect(() => {
    async function fetchData() {
      const id = params.id.toString();
-     const response = await fetch(`http://localhost:5005/record/${params.id.toString()}`);
+     const response = await fetch(`https://mimoville.herokuapp.com/record/${params.id.toString()}`);
      if (!response.ok) {
        const message = `An error has occurred: ${response.statusText}`;
        window.alert(message);
@@ -48,7 +48,7 @@ export default function Edit() {
      about: form.about,
    };
    // This will send a post request to update the data in the database.
-   await fetch(`http://localhost:5005/update/${params.id}`, {
+   await fetch(`https://mimoville.herokuapp.com/update/${params.id}`, {
      method: "POST",
      body: JSON.stringify(editedPerson),
      headers: {

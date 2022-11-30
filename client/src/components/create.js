@@ -19,7 +19,7 @@ export default function Create() {
  async function onSubmit(e) {
    e.preventDefault();
    const newPerson = { ...form };
-   await fetch("http://localhost:5005/record/add", {
+   await fetch("https://mimoville.herokuapp.com/record/add", {
      method: "POST",
      headers: {
        "Content-Type": "application/json",

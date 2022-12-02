@@ -10,7 +10,6 @@ import Create from "./components/create";
 import Record from "./components/record";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import SearchPage from "./pages/SearchPage";
 import RecordPage from "./pages/RecordPage";
 
 const App = () => {
@@ -24,7 +23,6 @@ const App = () => {
         <Route path="/edit/:id" element={<Edit />} />
         <Route path="/create" element={<Create />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/search" element={<SearchPage />} />
         <Route path="/list" element={<RecordPage />} />
         <Route path="/record/:id" element={<Record />} />
       </Routes>

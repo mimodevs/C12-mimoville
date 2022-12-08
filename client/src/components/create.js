@@ -9,13 +9,11 @@ export default function Create() {
    price: "",
  });
  const navigate = useNavigate();
- // These methods will update the state properties.
  function updateForm(value) {
    return setForm((prev) => {
      return { ...prev, ...value };
    });
  }
- // This function will handle the submission.
  async function onSubmit(e) {
    e.preventDefault();
    const newPerson = { ...form };
@@ -25,15 +23,10 @@ export default function Create() {
        "Content-Type": "application/json",
      },
      body: JSON.stringify(newPerson),
-   })
-   .catch(error => {
-     window.alert(error);
-     return;
    });
    setForm({ name: "", about: "", address: "", phone: "", price: "" });
    navigate("/records");
  }
- // This following section will display the form that takes the input from the user.
  return (
    <div>
      <h3>Create New Record</h3>

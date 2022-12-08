@@ -48,9 +48,7 @@ export default function RecordList() {
  return (
    <div className="container">
      <h1>Record List</h1>
-     <Link className="btn btn-primary" to="/create">
-        Create Record
-      </Link>
+     <Link className="btn btn-primary" to="/create">Create Record</Link>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
          <tr>

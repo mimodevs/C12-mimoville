@@ -12,7 +12,8 @@ export default function Record() {
  
  useEffect(() => {
    async function fetchData() {
-     const response = await fetch(`https://mimoville.herokuapp.com/record/${params.id.toString()}`);
+    //  const response = await fetch(`https://mimoville.herokuapp.com/record/${params.id.toString()}`);
+    const response = await fetch(`http://localhost:5005/record/${params.id.toString()}`);
      const record = await response.json();
      setRecord(record);
    }

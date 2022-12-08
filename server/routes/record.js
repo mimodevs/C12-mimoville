@@ -33,6 +33,7 @@ recordRoutes.route("/record/add").post(function (req, response) {
    address: req.body.address,
    phone: req.body.phone,
    price: req.body.price,
+   photo: req.body.photo,
  };
  db_connect.collection("records").insertOne(myobj, function (err, res) {
    if (err) throw err;
@@ -50,6 +51,7 @@ recordRoutes.route("/update/:id").post(function (req, response) {
      address: req.body.address,
      phone: req.body.phone,
      price: req.body.price,
+     photo: req.body.photo,
    },
  };
  db_connect

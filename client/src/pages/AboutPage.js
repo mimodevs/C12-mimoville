@@ -2,32 +2,41 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <main className="container-fluid">
-    <div className=" d-flex flex-row mb-3">
-      <div className="card">
-        <img src="/listings/example.png" className="card-img-top" alt="..." />
-  
-        <div className="card-body">
-          <h5 className="card-title">Name</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+    <>
+      <section className="about">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus
+          ipsum mi, fringilla id eros vitae, semper pulvinar eros. Vestibulum
+          placerat, diam nec suscipit luctus, arcu mi rhoncus turpis, id
+          eleifend augue neque quis dolor. Curabitur nec enim vitae nulla
+          ullamcorper scelerisque a eget ligula. Vestibulum fringilla erat nisi,
+          eget posuere justo vehicula id. Etiam euismod, sapien id sollicitudin
+          rhoncus, eros mi vestibulum augue, ac lacinia urna purus ac sem.
+          Nullam imperdiet leo ut ex semper condimentum. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
+      </section>
+      <section className="team">
+        <h2>Our Team</h2>
+        <div className="members-containter">
+          <div className="member-card">
+            <h3>Michael</h3>
+          </div>
+          <div className="member-card">
+            <h3>Brandy</h3>
+          </div>
+          <div className="member-card">
+            <h3>Mayte</h3>
+          </div>
+          <div className="member-card">
+            <h3>Rolando</h3>
+          </div>
         </div>
-      </div>
-      <div className="card">
-      <img src="/listings/example.png" className="card-img-top" alt="..." />
 
-        <div className="card-body">
-          <h5 className="card-title">Name</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-      </div>
-    </div>
-    </main>
+      </section>
+    </>
   );
 };
 

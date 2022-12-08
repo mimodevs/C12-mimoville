@@ -1,24 +1,17 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container-fluid">
-        <section className="Social-container">
-          <a href="#" className="social-btn">
-            <img src="/assets/fblogo.png"></img>
-          </a>
-
-          <a href="#" className="social-btn">
-            <img src="/assets/instalogo.png"></img>
-          </a>
-
-          <a href="#" className="social-btn">
-            <img src="/assets/ghlogo.png"></img>
-          </a>
-        </section>
-      </div>
+    <footer className="container-fluid">
+      <p>
+        <a href="https://github.com/mimodevs/C12-mimoville">GitHub</a>
+        <a href="#">Slack</a> 
+      </p>
+      <p>
+        <Link to={`/admin`}>Admin</Link>
+        <Link to={`/create`}>Create</Link>
+      </p>
     </footer>
   );
 };

@@ -1,33 +1,52 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router";
- 
-export default function Record() {
- const [props, setRecord] = useState({
-   name: "",
-   about: "",
-   address: "",
-   price: "",
- });
- const params = useParams();
- 
- useEffect(() => {
-   async function fetchData() {
-    //  const response = await fetch(`https://mimoville.herokuapp.com/record/${params.id.toString()}`);
-    const response = await fetch(`http://localhost:5005/record/${params.id.toString()}`);
-     const record = await response.json();
-     setRecord(record);
-   }
-   fetchData();
-   return;
- }, [params.id]);
+import { useParams, useNavigate } from "react-router";
+import { Link } from "react-router-dom";
+import { DEVURL, FIELDS } from "../constants/global";
 
- return (
-   <div>
-     <h3>Record</h3>
-     <p>Name: {props.name}</p>
-     <p>{props.about}</p>
-     <p>{props.address}</p>
-     <p>{props.price}</p>
-   </div>
- );
+const Record = (props) => (
+  <div>
+     <img src={`/listings/${props.record.photo}.png`} alt="record" />
+    <h3>{props.record.name}</h3>
+    <p>{props.record.about}</p>
+    <p>{props.record.address}</p>
+    <p>{props.record.phone}</p>
+    <p>{props.record.price} Night</p>
+    <p>
+      <Link to={`/edit/${props.record._id}`}>Edit</Link> | <Link onClick={() => { props.deleteRecord(); }}>Delete</Link>
+    </p>
+  </div>
+);
+
+export default function FetchRecord() {
+  const [record, setRecord] = useState(FIELDS);
+  const params = useParams();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(`${DEVURL}/record/${params.id.toString()}`);
+      const record = await response.json();
+      setRecord(record);
+    }
+    fetchData();
+    return;
+  }, [params.id]);
+
+  async function deleteRecord() {
+    await fetch(`${DEVURL}/${params.id}`, { method: "DELETE", });
+    navigate("/");
+  }
+
+  function renderRecord() {
+    return (
+      <Record
+        record={record}
+        deleteRecord={() => deleteRecord(params.id)}
+        key={params.id}
+      />
+    );
+  }
+  return (
+     renderRecord()
+  );
 }

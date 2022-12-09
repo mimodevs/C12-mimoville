@@ -78,6 +78,16 @@ export default function Create() {
           />
         </div>
         <div className="form-group">
+          <label htmlFor="name">Amenities</label>
+          <input
+            type="text"
+            className="form-control"
+            id="amenities"
+            value={form.amenities}
+            onChange={(e) => updateForm({ amenities: e.target.value })}
+          />
+        </div>
+        <div className="form-group">
           <label htmlFor="photo">Photo File Name</label>
           <input
             type="text"

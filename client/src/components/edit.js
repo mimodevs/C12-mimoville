@@ -31,7 +31,7 @@ export default function Edit() {
       phone: form.phone,
       price: form.price,
       photo: form.photo,
-      amenities: form.amenities,
+      amenities: form.amenities
     };
     await fetch(`${DEVURL}/update/${params.id}`, {
       method: "POST",
@@ -96,6 +96,18 @@ export default function Edit() {
             onChange={(e) => updateForm({ price: e.target.value })}
           />
         </div>
+
+        <div className="form-group">
+          <label htmlFor="amenities">Amenities: </label>
+          <input
+            type="text"
+            className="form-control"
+            id="amenities"
+            value={form.amenities}
+            onChange={(e) => updateForm({ amenities: e.target.value })}
+          />
+        </div>
+
         <div className="form-group">
           <label htmlFor="photo">Photo File Name: </label>
           <input

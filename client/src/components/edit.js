@@ -31,7 +31,7 @@ export default function Edit() {
       phone: form.phone,
       price: form.price,
       photo: form.photo,
-      amenities: form.amenities
+      amenities: form.amenities,
     };
     await fetch(`${DEVURL}/update/${params.id}`, {
       method: "POST",

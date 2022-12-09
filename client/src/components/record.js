@@ -5,7 +5,7 @@ import { DEVURL, FIELDS } from "../constants/global";
 
 const Record = (props) => (
   <div>
-     <img src={`/listings/${props.record.photo}.png`} alt="record" />
+     <img src={`/listings/${props.record.photo}`} alt="record" />
     <h3>{props.record.name}</h3>
     <p>{props.record.about}</p>
     <p>{props.record.address}</p>

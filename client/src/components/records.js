@@ -4,7 +4,7 @@ import { DEVURL } from "../constants/global";
 
 const Records = (props) => (
   <div className="record-card">
-    <img src={`/listings/${props.record.photo}.png`} alt="record" />
+    <img src={`/listings/${props.record.photo}`} alt="record" />
     <h3>
       <Link to={`/record/${props.record._id}`}>{props.record.name}</Link>
     </h3>

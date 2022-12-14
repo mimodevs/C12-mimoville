@@ -8,9 +8,10 @@ const Record = (props) => (
      <img src={`/listings/${props.record.photo}`} alt="record" />
     <h3>{props.record.name}</h3>
     <p>{props.record.about}</p>
-    <p>{props.record.address}</p>
-    <p>{props.record.phone}</p>
-    <p>{props.record.price} Night</p>
+    <p>Address: {props.record.address}</p>
+    <p>Contact: {props.record.phone}</p>
+    <p>Price: {props.record.price} Night</p>
+    <p>Amenities: {props.record.amenities}</p>
     <p>
       <Link to={`/edit/${props.record._id}`}>Edit</Link> | <Link onClick={() => { props.deleteRecord(); }}>Delete</Link>
     </p>

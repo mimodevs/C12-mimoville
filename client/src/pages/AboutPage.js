@@ -23,15 +23,23 @@ const AboutPage = () => {
         <div className="members-containter">
           <div className="member-card">
             <h3>Michael</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus ipsum mi, fringilla id eros vitae, semper pulvinar eros.</p>
           </div>
           <div className="member-card">
             <h3>Brandy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus ipsum mi, fringilla id eros vitae, semper pulvinar eros.</p>
           </div>
           <div className="member-card">
             <h3>Mayte</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus ipsum mi, fringilla id eros vitae, semper pulvinar eros.</p>
           </div>
           <div className="member-card">
             <h3>Rolando</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus ipsum mi, fringilla id eros vitae, semper pulvinar eros.</p>
+          </div>
+          <div className="member-card">
+            <h3>Gage</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus ipsum mi, fringilla id eros vitae, semper pulvinar eros.</p>
           </div>
         </div>
 

@@ -6,40 +6,32 @@ const AboutPage = () => {
       <section className="about">
         <h2>About</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus
-          ipsum mi, fringilla id eros vitae, semper pulvinar eros. Vestibulum
-          placerat, diam nec suscipit luctus, arcu mi rhoncus turpis, id
-          eleifend augue neque quis dolor. Curabitur nec enim vitae nulla
-          ullamcorper scelerisque a eget ligula. Vestibulum fringilla erat nisi,
-          eget posuere justo vehicula id. Etiam euismod, sapien id sollicitudin
-          rhoncus, eros mi vestibulum augue, ac lacinia urna purus ac sem.
-          Nullam imperdiet leo ut ex semper condimentum. Orci varius natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Mimoville is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in specific locations. Mimoville offers people an easy, relatively stress-free way to earn some income from their property.
+          Guests often find Mimoville is cheaper, has more character, and is homier than hotels. Mimoville makes the bulk of its revenue by charging a service fee for each booking.
         </p>
       </section>
       <section className="team">
         <h2>Our Team</h2>
-        <div className="members-containter">
+        <div className="members-container">
           <div className="member-card">
-            <h3>Michael</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus ipsum mi, fringilla id eros vitae, semper pulvinar eros.</p>
+            <h3>Michael P.</h3>
+            <p><strong>Bio:</strong> Air Force Veteran and Junior Web Developer with a bachelor's degree in Criminal Justice from Stockton University.</p>
           </div>
           <div className="member-card">
-            <h3>Brandy</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus ipsum mi, fringilla id eros vitae, semper pulvinar eros.</p>
+            <h3>Brandy C.</h3>
+            <p><strong>Bio:</strong></p>
           </div>
           <div className="member-card">
-            <h3>Mayte</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus ipsum mi, fringilla id eros vitae, semper pulvinar eros.</p>
+            <h3>Mayte V.</h3>
+            <p><strong>Bio:</strong></p>
           </div>
           <div className="member-card">
-            <h3>Rolando</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus ipsum mi, fringilla id eros vitae, semper pulvinar eros.</p>
+            <h3>Rolando A.</h3>
+            <p><strong>Bio:</strong></p>
           </div>
           <div className="member-card">
-            <h3>Gage</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eget orci sed lobortis. Suspendisse vel nisi nisl. Vivamus ipsum mi, fringilla id eros vitae, semper pulvinar eros.</p>
+            <h3>Gage C.</h3>
+            <p><strong>Bio:</strong></p>
           </div>
         </div>
 

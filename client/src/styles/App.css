@@ -40,7 +40,7 @@ main {
 .records-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
 }
 .record-card {
@@ -51,14 +51,15 @@ main {
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
-.members-containter {
+.members-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 20px;
 }
 .member-card {
-  width: 30%;
+  width: 350px;
   margin-bottom: 20px;
   padding: 20px;
   background-color: white;
@@ -85,4 +86,10 @@ footer p a {
 footer p a:last-child {
   border-right: none;
   padding-right: 0;
+}
+
+@media (max-width: 650px) {
+  .record-card {
+    width: 350px;
+  }
 }

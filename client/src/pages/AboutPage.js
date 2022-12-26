@@ -23,7 +23,7 @@ const AboutPage = () => {
           </div>
           <div className="member-card">
             <h3>Mayte V.</h3>
-            <p><strong>Bio:</strong></p>
+            <p><strong>Bio:</strong>Economist transitioning to the web development world. Passionate about watercolor art, music, discovering new places and coding. Always learning.</p>
           </div>
           <div className="member-card">
             <h3>Rolando A.</h3>

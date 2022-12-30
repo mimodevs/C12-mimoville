@@ -4,14 +4,15 @@ import { DEVURL } from "../constants/global";
 
 const Records = (props) => (
   <div className="record-card">
-    <img src={`/listings/${props.record.photo}`} alt="record" />
+    <Link to={`/record/${props.record._id}`}><img src={`/listings/${props.record.photo}`} alt="record" /></Link>
     <h3>
-      <Link to={`/record/${props.record._id}`}>{props.record.name}</Link>
+      <strong>{props.record.name}</strong>
     </h3>
     <p>{props.record.about}</p>
     <p>{props.record.address}</p>
     <p>{props.record.phone}</p>
     <p>{props.record.price} Night</p>
+    <Link to={`/record/${props.record._id}`}><button type="button" class="btn btn-success">Book</button></Link>
   </div>
 );
 
